@@ -10,6 +10,37 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class WeatherActivity extends AppCompatActivity {
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("WeatherApp", "onStart() called");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("WeatherApp", "onResume() called");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("WeatherApp", "onPause() called");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("WeatherApp", "onStop() called");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("WeatherApp", "onDestroy() called");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,35 +52,16 @@ public class WeatherActivity extends AppCompatActivity {
             return insets;
         });
         Log.i("WeatherApp", "onCreate() called");
-    }
 
-    @Override
-    protected void onStart(){
-        super.onStart();
-        Log.i("WeatherApp", "onStart() called");
-    }
+        //Pratical 3
+        // Create a new Fragment to be placed in the activity
+        if (savedInstanceState == null) {
+            ForecastFragment forecastFragment = new ForecastFragment();
 
-    @Override
-    protected void onResume(){
-        super.onResume();
-        Log.i("WeatherApp", "onResume() called");
-    }
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.main, forecastFragment)
+                    .commit();
 
-    @Override
-    protected void onPause(){
-        super.onPause();
-        Log.i("WeatherApp", "onPause() called");
-    }
-
-    @Override
-    protected void onStop(){
-        super.onStop();
-        Log.i("WeatherApp", "onStop() called");
-    }
-
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        Log.i("WeatherApp", "onDestroy() called");
+        }
     }
 }

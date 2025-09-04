@@ -5,10 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".ForecastFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- You can keep the TextView for now or replace with something else -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="This is the Forecast Fragment"
+        android:gravity="center"
+        android:textSize="18sp" />
 
 </FrameLayout>
