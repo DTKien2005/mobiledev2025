@@ -27,7 +27,7 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(0x20FF0000);
+        view.setBackgroundColor(0xFFFFFFFF);
 
         TextView dayTextView = view.findViewById(R.id.dayTextView);
         ImageView weatherIcon = view.findViewById(R.id.weatherIcon);
