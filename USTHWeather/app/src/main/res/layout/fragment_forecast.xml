@@ -3,264 +3,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ForecastFragment">
 
-    <LinearLayout
+    <RelativeLayout
 
         android:layout_width="match_parent"
         android:layout_height="202dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#E0E0FF">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:text="@string/thursday"
             android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/weatherIcon"
-            android:layout_width="143dp"
-            android:layout_height="124dp"
+            android:layout_width="166dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
             android:contentDescription="@drawable/cloud_icon"
             android:src="@drawable/cloud_icon" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="126dp"
             android:layout_height="wrap_content"
-            android:text="@string/thursday"
-            android:textSize="30sp" />
+            android:layout_alignParentRight="true"
+            android:text="@string/city"
+            android:textSize="20sp"
+            android:textAlignment="viewEnd"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="vertical">
+        <TextView
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:text="23oC\nCloudy"
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+    </RelativeLayout>
 
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon1"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon3"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon4"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon5"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon6"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon7"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon8"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textAlignment="center"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:id="@+id/weatherIcon9"
-                android:layout_width="97dp"
-                android:layout_height="match_parent"
-                android:contentDescription="@drawable/cloud_icon"
-                android:src="@drawable/cloud_icon" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/fri"
-                android:textSize="30sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
 </LinearLayout>

@@ -29,11 +29,7 @@ public class ForecastFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
         view.setBackgroundColor(0xFFFFFFFF);
 
-        TextView dayTextView = view.findViewById(R.id.dayTextView);
         ImageView weatherIcon = view.findViewById(R.id.weatherIcon);
-
-        String currentDay = getCurrentDay();
-        dayTextView.setText(currentDay);  // You can update this based on the current day
 
         // Set the image resource for the ImageView (weather icon)
         weatherIcon.setImageResource(R.drawable.cloud_icon);
@@ -42,7 +38,7 @@ public class ForecastFragment extends Fragment {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_forecast, container, false);
     }
-    private String getCurrentDay() {
+/*    private String getCurrentDay() {
         Calendar calendar = Calendar.getInstance();
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
 
@@ -57,4 +53,5 @@ public class ForecastFragment extends Fragment {
             default: return "Unknown";
         }
     }
+ */
 }
