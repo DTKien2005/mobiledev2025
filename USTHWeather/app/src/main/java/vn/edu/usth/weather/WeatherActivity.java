@@ -56,10 +56,12 @@ public class WeatherActivity extends AppCompatActivity {
         //Pratical 3
         // Create a new Fragment to be placed in the activity
         if (savedInstanceState == null) {
+            WeatherFragment weatherFragment = new WeatherFragment();
             ForecastFragment forecastFragment = new ForecastFragment();
 
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.main, forecastFragment)
+                    .replace(R.id.weatherFragmentContainer, weatherFragment)
+                    .replace(R.id.forecastFragmentContainer, forecastFragment)
                     .commit();
 
         }
