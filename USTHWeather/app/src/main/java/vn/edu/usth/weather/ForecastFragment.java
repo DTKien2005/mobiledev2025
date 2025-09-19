@@ -32,7 +32,7 @@ public class ForecastFragment extends Fragment {
         ImageView weatherIcon = view.findViewById(R.id.weatherIcon);
 
         // Set the image resource for the ImageView (weather icon)
-        weatherIcon.setImageResource(R.drawable.cloud_icon);
+        weatherIcon.setImageResource(R.drawable.wi_cloudy);
 
         return view;
         // Inflate the layout for this fragment

@@ -27,8 +27,8 @@
             android:layout_width="166dp"
             android:layout_height="150dp"
             android:layout_centerInParent="true"
-            android:contentDescription="@drawable/cloud_icon"
-            android:src="@drawable/cloud_icon" />
+            android:contentDescription="@drawable/wi_cloud"
+            android:src="@drawable/wi_cloud" />
 
         <TextView
             android:layout_width="126dp"
