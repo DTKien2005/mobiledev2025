@@ -60,8 +60,7 @@ public class WeatherActivity extends AppCompatActivity {
             ForecastFragment forecastFragment = new ForecastFragment();
 
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.weatherFragmentContainer, weatherFragment)
-                    .replace(R.id.forecastFragmentContainer, forecastFragment)
+                    .add(R.id.main, forecastFragment)
                     .commit();
 
         }
