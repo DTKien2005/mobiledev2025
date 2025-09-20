@@ -4,11 +4,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#E0E0FF"
     android:padding="10dp">
 
     <RelativeLayout
-
+        android:background="#E0E0FF"
         android:layout_width="wrap_content"
         android:layout_height="263dp"
         android:layout_marginLeft="10dp"
